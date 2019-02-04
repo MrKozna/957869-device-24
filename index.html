@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="css/normilize.css">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
@@ -14,7 +15,7 @@
         <form class="search" action="https://echo.htmlacademy.ru" method="get">
           <label class="visually-hidden" for="search">Поиск по сайту</label>
           <input type="search" id="search" name="search" placeholder="Поиск по сайту">
-          <input type="submit" value="Найти">
+          <button type="submit">Найти</button>
         </form>
         <ul class="user-navigation">
           <li><a href="#">Войти</a></li>
@@ -22,7 +23,16 @@
           <li><a href="#">Корзина</a></li>
         </ul>
         <ul class="site-navigation">
-          <li><a class="focus-menu" href="catalog.html">Каталог товаров</a></li>
+          <li><a class="focus-menu" href="#.html">Каталог товаров</a>
+            <ul class="menu-popup-list">
+              <li><a href="#">Виртуальная реальность</a></li>
+              <li><a href="inner.html">Моноподы для селфи</a></li>
+              <li><a href="#">Экшн-камеры</a></li>
+              <li><a href="#">Фитнес-браслеты</a></li>
+              <li><a href="#">Умные часы</a></li>
+              <li><a href="#">Квадрокоптеры</a></li>
+            </ul>
+          </li>
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
@@ -213,17 +223,6 @@
       <img src="img/logo-html.svg" width="27" height="35" alt="HTML Academy">
       </a>
     </footer>
-    <section class="menu-popup">
-      <h2 class="visually-hidden">Выпадающее меню</h2>
-      <ul class="menu-popup-list">
-        <li><a href="#">Виртуальная реальность</a></li>
-        <li><a href="inner.html">Моноподы для селфи</a></li>
-        <li><a href="#">Экшн-камеры</a></li>
-        <li><a href="#">Фитнес-браслеты</a></li>
-        <li><a href="#">Умные часы</a></li>
-        <li><a href="#">Квадрокоптеры</a></li>
-      </ul>
-    </section>
     <section class="Write-us-popup">
         <h2 class="visually-hidden">Напишите нам</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
