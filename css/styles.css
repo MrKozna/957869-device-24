@@ -1,3 +1,174 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+  color: #000000;
+  background-color: #ffffff;
+}
+@font-face {
+  font-family: 'gilroy'; /* Имя шрифта */
+  src: url('fonts/gilroy.woff2') format('woff2'); /* Путь к файлу со шрифтом */
+ }
+@font-face {
+  font-family: 'gilroyextrabold'; /* Имя шрифта */
+  src: url('fonts/gilroyextrabold.woff2') format('woff2'); /* Путь к файлу со шрифтом */
+ }
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+color:#000000;
+background-color: rgba(246, 197, 46, 0.5);
+}
+.user-navigation, .site-navigation {
+  list-style: none;
+}
+.user-navigation a, .site-navigation a{
+  color:#000000;
+}
+
+.bold {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+}
+
+.user-navigation a:hover, .user-navigation a:focus, 
+.site-navigation a:hover .site-navigation a:focus, .main-navigation .bold a:hover,
+.main-navigation .bold a:focus {
+  color: rgba(0, 0, 0, 0.6)
+}
+
+article b {
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-size: 47px;
+  line-height: 56px;
+  letter-spacing: 0.17px;
+  color: #000000;
+}
+
+article a{
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: #000000;
+}
+th {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.13px;
+  color: #000000;
+}
+td {
+  font-family: 'gilroy', Arial, sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.36px;
+  color: #000000;
+}
+.catalog-main ul{
+  list-style: none;
+}
+.catalog-main h3 {
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+  color: #000000;
+}
+
+.slider-services ul {
+  list-style: none;
+}
+
+.list-of-services a {
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 3.5px;
+  color: #000000;
+} 
+.describing-of-services h3, .about-us h2, .contacts h2{
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  letter-spacing: 0.21px;
+  color: #000000;
+}
+.companies ul{
+  list-style: none;
+}
+
+.about-us li{
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  letter-spacing: 0px;
+  color: #000000;
+}
+.about-us a, .contacts a {
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+
+
+.main-footer {
+  color:#ffffff;
+  background-color: #464646;
+}
+
+.main-footer p{
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+.user-navigation-footer a {
+  color:rgba(255, 255, 255, 0.7);
+}
+.social-networks a, .site-navigation-footer a {
+  color:#ffffff; 
+}
+.site-navigation-footer a:hover, .site-navigation-footer a:focus {
+  color:rgba(255, 255, 255, 0.6);
+}
+
+.user-navigation-footer a:hover, .user-navigation-footer a:focus {
+  color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+.site-navigation-footer, .social-networks, .user-navigation-footer {
+  list-style: none;
+}
+
+.menu-popup-list, .Write-us-popup, .map-popup {
+  display: none;
+}
+
+
+
 .visually-hidden {
     position: absolute;
     width: 1px;
