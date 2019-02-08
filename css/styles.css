@@ -161,7 +161,9 @@ td {
   color: #000000;
 }
 
-
+.slider-services {
+  background-color: #E5E5E5;
+}
 
 .slider-services ul {
   list-style: none;
