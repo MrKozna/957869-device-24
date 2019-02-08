@@ -1,3 +1,4 @@
+/* Главная страница стилизация */
 body {
   margin: 0;
   padding: 0;
@@ -19,10 +20,11 @@ body {
 a {
   text-decoration: none;
 }
-
+/* header */
 .main-navigation {
 color:#000000;
 background-color: rgba(246, 197, 46, 0.5);
+width: 1160px;
 }
 .user-navigation, .site-navigation {
   list-style: none;
@@ -39,11 +41,30 @@ background-color: rgba(246, 197, 46, 0.5);
   font-family: 'gilroyextrabold', Arial, sans-serif;
 }
 
+.search label {
+  color: rgba(0, 0, 0, 0.3))
+}
+.search input {
+  vertical-align: bottom;
+  border:none;
+  padding-bottom:9px;
+  border-bottom: 2px solid black;
+  background: transparent;
+  width: 356px;
+}
+.search button {
+  width: 85px;
+  height: 49px;
+  border:2px solid black;
+  background: transparent;
+}
 .user-navigation a:hover, .user-navigation a:focus, 
 .site-navigation a:hover .site-navigation a:focus, .main-navigation .bold a:hover,
 .main-navigation .bold a:focus {
   color: rgba(0, 0, 0, 0.6)
 }
+
+/* main */
 
 article b {
   font-family: 'gilroyextrabold', Arial, sans-serif;
@@ -54,12 +75,29 @@ article b {
 }
 
 article a{
+  height: 40px;
+  width: 220px;
   font-family: 'gilroyextrabold', Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 3.5px;
   text-transform: uppercase;
   color: #000000;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.button-link {
+  width: 220px;
+  height: 8px;
+  background: url("../img/yellow_line.png") no-repeat;
+  background-position: center; 
+}
+article a span:hover, article a span:focus {
+  width: 220px;
+  height:40px;
+  background: url("../img/yellow_box.png") no-repeat;
+  background-position: center;
 }
 th {
   font-family: 'Open Sans', Arial, sans-serif;
@@ -76,6 +114,42 @@ td {
   letter-spacing: 0.36px;
   color: #000000;
 }
+.box {
+  width: 160px;
+  height: 160px;
+  background: rgba(246, 197, 46, 0.5);
+  text-align: center;
+}
+.vr img {
+  display: inline;
+  margin-top:52px;
+}
+.mn  img {
+  display: inline;
+  margin-top:21px;
+}
+.ac  img {
+  display: inline;
+  margin-top:36px;
+}
+.fi  img {
+  display: inline;
+  margin-top:47px;
+}
+.sm  img {
+  display: inline;
+  margin-top:31px;
+}
+.co  img {
+  display: inline;
+  margin-top:45px;
+}
+
+.catalog-main a .box:hover {
+  background: rgba(246, 197, 46, 1);
+}
+
+
 .catalog-main ul{
   list-style: none;
 }
@@ -86,6 +160,8 @@ td {
   letter-spacing: 0.18px;
   color: #000000;
 }
+
+
 
 .slider-services ul {
   list-style: none;
@@ -126,10 +202,10 @@ td {
 }
 
 
-
 .main-footer {
   color:#ffffff;
   background-color: #464646;
+  width: 1160px;
 }
 
 .main-footer p{
@@ -179,3 +255,9 @@ td {
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+
+
+
+
+
+  /* Кекс body > * { background-color: rgba(255,0,0,0.5); } body > * > * { background-color: rgba(255,255,0,0.5); } body > * > * > * { background-color: rgba(0,255,0,0.5); } body > * > * > * { background-color: rgba(255,0,255,0.5); } */
