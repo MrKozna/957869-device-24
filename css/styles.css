@@ -14,28 +14,56 @@ body {
   font-family: 'gilroy'; /* Имя шрифта */
   font-style: normal;
   font-weight: 300;
-  src: url('../css/fonts/gilroylight.woff2') format('woff2');
-  src: url('../css/fonts/gilroylight.woff') format('woff');/* Путь к файлу со шрифтом */
-  src: local('Gilroylight.ttf');
+  src: local('Gilroylight'), url('../fonts/gilroylight.woff2') format('woff2'), url('../fonts/gilroylight.woff') format('woff');
+  
  }
 @font-face {
   font-family: 'gilroy'; /* Имя шрифта */
   font-style: normal;
   font-weight: 800;
-  src: url('../css/fonts/gilroyextrabold.woff2') format('woff2'); /* Путь к файлу со шрифтом */
-  src: url('../css/fonts/gilroyextrabold.woff') format('woff');
-  src: local('Gilroyextrabold.ttf');
+  src: local('Gilroyextrabold'), url('../fonts/gilroyextrabold.woff2') format('woff2'), url('../fonts/gilroyextrabold.woff') format('woff');
+  
 }
 a {
   text-decoration: none;
 }
+.container {
+  margin: 0 auto;
+  width: 1160px;
+}
 /* header */
+.main-header-logo {
+  display: inline-block;
+  margin-top: -17px;
+  margin-left: 60px;
+}
+.main-header-logo:hover, .main-header-logo:focus {
+  opacity: 0.6;
+}
 .main-header {
 color:#000000;
 background-color: rgba(246, 197, 46, 0.5);
-width: 1160px;
+margin-top:40px;
+height: 299px;
+
 }
+.main-header::after {
+  display: inline-block;
+  content: "01";
+  font-family: 'gilroy'; 
+  font-style: normal;
+  font-weight: 800;
+  font-size: 179px;
+  line-height: 179px;
+  letter-spacing: 1.79px;
+  color: #ffffff;
+  margin-left:934px;
+  
+}
+
 .user-navigation, .site-navigation {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 .user-navigation a, .site-navigation a{
@@ -63,19 +91,65 @@ width: 1160px;
   background: transparent;
   width: 356px;
 }
+
 .search button {
+  
   width: 85px;
   height: 49px;
   border:2px solid black;
   background: transparent;
 }
+
 .user-navigation a:hover, .user-navigation a:focus, 
 .site-navigation a:hover .site-navigation a:focus, .main-navigation .bold-text a:hover,
 .main-navigation .bold-text a:focus {
   color: rgba(0, 0, 0, 0.6)
 }
+.user-nav {
+  display:flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 37px;
+  
+}
+.search {
+  margin-left: 99px;
+  
+}
+.user-navigation {
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 61px;
+}
+.user-navigation li:nth-child(2) {
+margin-right: 66px;
+}
+.user-navigation li:nth-child(1) {
+  margin-right: 240px;
+  }
+
+.site-navigation {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-navigation li:nth-child(1) {
+  margin-left: 60px;
+}
+.site-navigation li:nth-child(2) {
+  margin-left: 300px;
+}
+.site-navigation li:nth-child(3) {
+  margin-right: 90px;
+}
+.site-navigation li:nth-child(4) {
+  margin-right: 60px;
+}
 
 /* main */
+article {
+  display:flex;
+}
 
 article b {
   font-family: 'gilroy', Arial, sans-serif;
@@ -159,6 +233,10 @@ td {
   margin-top:45px;
 }
 
+.catalog-main-list {
+  display: flex;
+}
+
 .catalog-main a .box:hover {
   background: rgba(246, 197, 46, 1);
 }
@@ -176,6 +254,9 @@ td {
   color: #000000;
 }
 
+.list-services-flex {
+  display: flex;
+}
 .slider-services {
   background-color: #E5E5E5;
 }
@@ -201,6 +282,11 @@ td {
   letter-spacing: 0.21px;
   color: #000000;
 }
+
+.brand {
+  display: flex;
+  justify-content: space-around;
+}
 .companies ul{
   list-style: none;
 }
@@ -211,6 +297,9 @@ td {
   opacity: 1;
 }
 
+.about {
+  display: flex;
+}
 .about-us li{
   font-family: 'gilroy', Arial, sans-serif;
   font-weight: 800;
@@ -233,7 +322,7 @@ td {
 .main-footer {
   color:#ffffff;
   background-color: #464646;
-  width: 1160px;
+
 }
 
 .main-footer p{
@@ -262,6 +351,12 @@ td {
 
 .site-navigation-footer, .social-networks, .user-navigation-footer {
   list-style: none;
+}
+
+
+.footer-flex {
+ display: flex;
+ flex-wrap: wrap;
 }
 
 
@@ -420,7 +515,7 @@ td {
 
 /* misc */
 
-.menu-popup-list, .Write-us-popup, .map-popup {
+.menu-popup-list, .Write-us-popup, .map-popup, .fitness, .copter {
   display: none;
 }
 
