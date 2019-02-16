@@ -1331,7 +1331,7 @@ a.compare-button:hover {
 .sort a:hover, .sort a:focus {
   color: rgba(0, 0, 0, 0.6); 
 }
-button {
+button.button-link-inner {
   border: none;
   background: none;
   font-family: 'gilroy', Arial, sans-serif;
