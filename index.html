@@ -60,8 +60,8 @@
             <div class="article-text">
               <h2 class="visually-hidden">Статья про монопод 8м</h2>
               <b>Делай селфи,<br>как Бен Стиллер!</b>
-              <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-              <a href="article1.html" class="button-link">Подробнее</a>
+              <p>Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+              <a href="#" class="button-link">Подробнее</a>
               <table class="characteristics">
                 <tr class="characteristics-value">
                   <td>8,5 м</td>
@@ -77,12 +77,14 @@
             </div>
           </article>
           <article class="fitness">
-            <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
+            <div class="article-image">
+              <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
+            </div>
             <div class="article-text">
               <h2 class="visually-hidden">Статья фитнесс-браслет</h2>
               <b>Худеем <br>правильно!</b>
               <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-              <a href="article2.html"><span class="button-link">Подробнее</span></a>
+              <a href="#" class="button-link">Подробнее</a>
               <table class="characteristics">
                 <tr class="characteristics-value">
                   <td>48 часов</td>
@@ -94,12 +96,14 @@
             </div>
           </article>
           <article class="copter">
-            <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
+            <div class="article-image">
+              <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
+            </div>
             <div class="article-text">
               <h2 class="visually-hidden">Статья про квадрокоптер</h2>
               <b>Порхает как бабочка,<br>жалит как пчела!</b>
               <p>Этот обычный, на первый взгляд, квадрокоптер оснащен<br>мощным лазером, замаскированным под стандартную камеру.</p>
-              <a href="article3.html"><span class="button-link">Подробнее</span></a>
+              <a href="#" class="button-link">Подробнее</a>
               <table class="characteristics">
                 <tr class="characteristics-value">
                   <td>800 м</td>
@@ -160,25 +164,22 @@
           <h2 class="visually-hidden">Сервисы</h2>
           <div class="list-services-flex">
             <ul class="list-of-services">
-              <li><a class="button-link del" href="#">Доставка</a></li>
-              <li><a class="button-link war" href="#">Гарантия</a></li>
-              <li><a class="button-link cre" href="#">Кредит</a></li>
+              <li><a class="button-link-ser del" href="#">Доставка</a></li>
+              <li><a class="button-link-ser war" href="#">Гарантия</a></li>
+              <li><a class="button-link-ser cre" href="#">Кредит</a></li>
             </ul>
             <ul class="describing-of-services">
               <li id="delivery">
                 <h3>Доставка</h3>
                 <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-                <!-- <img src="img/delivery.svg" width="136" height="164" alt="Доставка"> -->
               </li>
               <li id="warranty">
                 <h3>Гарантия</h3>
                 <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-                <!-- <img src="img/warranty.svg" width="171" height="194" alt="Гарантия"> -->
               </li>
               <li id="credit">
                 <h3>Кредит</h3>
                 <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-                <!-- <img src="img/credit.svg" width="156" height="186" alt="Кредит"> -->
               </li>
             </ul>
           </div>
@@ -220,13 +221,13 @@
               <li>Автотрейдинг</li>
               <li>ЖелДорЭкспедиция</li>
             </ul>
-            <a href="#"><span class="button-link">Подробнее о нас</span></a>
+            <a href="#"><span class="button-link-about">Подробнее о нас</span></a>
           </section>  
           <section class="contacts">
             <h2>Контакты</h2>
             <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
             <img src="img/map.jpg" width="560" height="222" alt="Карта">
-            <a href="#"><span class="button-link">Напишите нам</span></a>
+            <a href="#"><span class="button-link-about">Напишите нам</span></a>
           </section>
         </div>
       </div>
@@ -257,32 +258,34 @@
               <li><a href="#" class="comparement">Сравнить</a></li>
               <li><a href="#" class="cart">Корзина</a></li>
           </ul>
-          <p class="tel">Тел.:+7(495)495-95-95</p>
+          <p class="tel">Тел.: +7 (495) 495-95-95</p>
           <a class="html-logo" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" rel="nofollow noopener">
             <img src="img/logo-html.svg" width="27" height="35" alt="HTML Academy">
           </a>
         </div>
       </div>
     </footer>
-    <section class="Write-us-popup">
+    <section class="modal Write-us-popup">
         <h2 class="visually-hidden">Напишите нам</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
-          <label>Ваше имя: 
-            <input type="text" name="login" placeholder="Имя Фамилия">
-          </label>
-          <label>Ваш e-mail: 
-            <input type="email" name="e-mail" placeholder="email@example.com">
-          </label>
+          <p>
+            <label class="name">Ваше имя:
+              <input type="text" name="login" placeholder="Имя Фамилия">
+            </label>
+            <label class="email">Ваш e-mail:
+              <input type="email" name="e-mail" placeholder="email@example.com">
+            </label> 
+          </p>
           <label for="message">Текст письма:</label>
           <textarea id="message" name="message" placeholder="В свободной форме" cols="10" rows="10"></textarea>
-          <input type="submit" name="send" value="отправить">
+          <button type="submit" class="button-link-send" name="send">Отправить</button>
         </form>
-        <button type="button" class="modal-close">x</button>
+        <button type="button" class="modal-close">Закрыть</button>
     </section>
-    <section class="map-popup">
+    <section class="modal map-popup">
       <h2 class="visually-hidden">Карта</h2>
-      <img src="img/map-big.jpg" width="960" height="559" alt="Карта">
-      <button type="button" class="modal-close">x</button>
+      <img src="img/map-big-jpg.jpg" width="960" height="559" alt="Карта">
+      <button type="button" class="modal-close">Закрыть</button>
     </section>
   </body>
 </html>
