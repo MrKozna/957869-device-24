@@ -1725,7 +1725,9 @@ button.button-link-send {
     overflow: hidden;
   }
 
-
+.popup-visible {
+  display: block;
+}
 
 
 
