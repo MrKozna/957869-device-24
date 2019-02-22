@@ -935,7 +935,7 @@ td {
   color: #000000;
   margin-left:0px;
 }
-.about-us a, .contacts a {
+.about-us a, .contacts a.popup {
   font-family: 'gilroy', Arial, sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -955,11 +955,11 @@ td {
   text-align: center;
   vertical-align: middle;
 }
-.about-us a:hover, .about-us a:focus, .contacts a:hover, .contacts a:focus {
+.about-us a:hover, .about-us a:focus, .contacts a.popup:hover, .contacts a.popup:focus {
   background-image: none;
   background-color: rgba(246, 197, 46, 1); 
 }
-.about-us a:active, .contacts a:active {
+.about-us a:active, .contacts a.popup:active {
   background-image: none;
   background-color: rgba(246, 197, 46, 1); 
   color: rgba(0, 0, 0, 0.3);
@@ -1612,6 +1612,19 @@ button.button-link-inner {
   margin-left: -480px;
   background-color: none; 
   z-index: 3;
+  
+}
+.map-popup iframe{
+  position: relative;
+  width: 960px;
+  height:559px;
+  z-index: 3;
+}
+.map-popup img {
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: 2;
 }
 .modal-close {
   position: absolute;
@@ -1624,6 +1637,7 @@ button.button-link-inner {
   background-repeat: no-repeat;
   right:22px;
   top:22px;
+  z-index: 4;
 }
 .Write-us-popup form {
   width: 760px;
