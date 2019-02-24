@@ -441,6 +441,7 @@ article:nth-child(3)::after {
   width: 78px;
   right: 80px;
   top:329px;
+  z-index: 5;
 }
 .button {
   width:12px;
@@ -479,10 +480,15 @@ article {
   display: none;
 }
 /* Отображение статей слайдера */
-.slider-items article:nth-child(1) {
+.slider-items .article-show {
+  display: flex;
+}
+/*  
+.slider-items article:nth-child(1) { 
   display: flex;
   
 }
+*/
 .article-image {
   display: flex;
   flex-shrink: 0;
@@ -1505,6 +1511,13 @@ button.button-link-inner {
   height: 70px;
   background-color: #d9d9d9;
 }
+.pagination li:first-child a:active, .pagination li:last-child a:active {
+  width: 126px;
+  height: 70px;
+  background-color: #d9d9d9;
+  color: rgba(0, 0, 0, 0.3);
+}
+
 /* sizes */
 .catalog-list img {
   display: inline-block;
@@ -1538,9 +1551,43 @@ li.catalog-items {
   padding-left: 40px;
   padding-top: 17px;
   margin-bottom:35px;
-  
 }
-
+li.catalog-items:nth-child(4)::before {
+  content: "";
+  position: absolute;
+  text-align: center;
+  vertical-align: middle;
+  top:44px;
+  right:25px;
+  width:56px;
+  height:56px;
+  font-family: 'gilroy', Arial, sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  color: rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+li.catalog-items:nth-child(4)::after {
+  content: "NEW";
+  position: absolute;
+  text-align: center;
+  vertical-align: middle;
+  top:63px;
+  right:39px;
+ 
+  font-family: 'gilroy', Arial, sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  color: rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+ 
+}
 
 /* forms */
 .paint {
@@ -1684,7 +1731,7 @@ input[type = radio]:checked ~ .check-r {
   width: 360px;
   height: 380px;
   background: rgba(255, 255, 255, 0.7);
- 
+  z-index: 1;
 }
 
 
@@ -1705,10 +1752,11 @@ input[type = radio]:checked ~ .check-r {
 }
 .catalog-items img:hover ~ div.cart-compare {
   display: flex;
-  
+  cursor: pointer;
 }
 .cart-compare:hover {
   display: flex;
+  cursor: pointer;
 }
 .cart-compare a:first-child:hover, .cart-compare a:first-child:focus {
   background-image: none;
