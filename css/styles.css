@@ -1910,7 +1910,7 @@ button.button-link-send {
   height: 40px;
   padding:8px;
   border: none;
-  background-color: none;
+  background-color: transparent;
   background-image: linear-gradient( rgba(255,255,255,0) 42%,rgba(246, 197, 46, 1) 42%,rgba(246, 197, 46, 1) 57%, rgba(255,255,255,0) 57%); 
   background-repeat: no-repeat;
   text-align: center;
