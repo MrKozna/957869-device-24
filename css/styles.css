@@ -804,9 +804,12 @@ td {
 .describing-of-services li {
   display: none;
 }
-.describing-of-services li:nth-child(1) {
+.describing-of-services .show {
   display: inline-block;
 }
+/* .describing-of-services li:nth-child(1) { 
+  display: inline-block;
+}*/
 
 .list-of-services a {
   font-family: 'gilroy', Arial, sans-serif;
@@ -839,6 +842,7 @@ td {
 .list-of-services a:hover, .list-of-services a:focus {
   background-image: none;
   background-color: rgba(246, 197, 46, 1); 
+  cursor: pointer;
   
 }
 .list-of-services a.del:active {
@@ -848,6 +852,7 @@ td {
   background-color: rgba(0, 0, 0, 1); 
   color: #f7e184;
 }
+
 .list-of-services a.war:active {
   padding-right: 142px;
   padding-left: 25px;
@@ -855,6 +860,7 @@ td {
   background-color: rgba(0, 0, 0, 1); 
   color: #f7e184;
 }
+
 .list-of-services a.cre:active {
   padding-right: 153px;
   padding-left: 37px;
@@ -862,6 +868,7 @@ td {
   background-color: rgba(0, 0, 0, 1); 
   color: #f7e184;
 }
+
 .button-link-ser.del {
   margin-top:80px;
   margin-bottom:25px;

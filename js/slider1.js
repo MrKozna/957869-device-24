@@ -6,9 +6,7 @@ var articleOne = document.querySelector(".monopod");
 var articleTwo = document.querySelector("article:nth-child(2)");
 var articleThree = document.querySelector("article:nth-child(3)");
 
-// var modal = document.querySelector(".Write-us-popup");
-// var close = document.querySelector(".modal-close");
-// var name = document.querySelector("[name=login]");
+
 
 buttonOne.addEventListener("click", function (evt) { 
 
@@ -48,18 +46,3 @@ buttonThree.addEventListener("click", function (evt) {
         articleOne.classList.remove("article-show");}
 
 });
-/*  close.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    modal.classList.remove("popup-visible");
-    
-  });
-  
-  window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      evt.preventDefault();
-      if (modal.classList.contains("popup-visible")) {
-        modal.classList.remove("popup-visible");
-      }
-    }
-  });
-  */
