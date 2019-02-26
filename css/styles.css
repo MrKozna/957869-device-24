@@ -1015,6 +1015,7 @@ td {
   color:#ffffff;
   background-color: #464646;
   height: 323px;
+  padding-top:63px;
 }
 
 
@@ -1031,7 +1032,9 @@ td {
 .user-navigation-footer a:hover, .user-navigation-footer a:focus {
   color: rgb(255, 255, 255);
 }
-
+.user-navigation-footer .logout{
+  color:rgba(255, 255, 255, 0.3);
+}
 
 
 .site-navigation-footer, .social-networks, .user-navigation-footer {
@@ -1041,35 +1044,41 @@ td {
 }
 
 .footer-1 {
-  float:left;
+  display: flex;
   position: relative;
-  width:360px;
-  height:323px;
+  justify-content: space-between;
+  width:1160px;
+  margin-bottom: 10px;
+  
 }
 .footer-2 {
-  float:left;
-  width:440px;
-  height:323px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  width:1160px;
+  margin-bottom: 45px;
 }
 .footer-3 {
-  float:left;
-  width:360px;
-  height:323px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  width:1160px;
 }
-.footer-1::after {
+.footer-3::before {
   content:"";  
-  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
   width: 80px;
   height: 7px;
-  bottom: 79px;
   background-image: url("../img/yellow-line-footer.png");
   background-repeat: no-repeat;
 }
 a.main-footer-logo {
   display: inline-block;
-  margin-top: 65px;
   margin-bottom: 0;
-  padding:0;
+  padding:0; 
 }
 a.main-footer-logo:hover, a.main-footer-logo:focus {
   opacity: 0.6;
@@ -1077,15 +1086,14 @@ a.main-footer-logo:hover, a.main-footer-logo:focus {
 a.main-footer-logo:active {
  opacity:  0.3;
 }
-.footer-1 p {
-  margin-top: 18px;
-}
 
 
 .site-navigation-footer {
-  margin-top:135px;
+  
   display: flex;
+  width:440px;
   justify-content: space-between;
+  margin-right: 41px;
 }
 .site-navigation-footer li:first-child{
   margin-left:6px;
@@ -1097,21 +1105,21 @@ a.main-footer-logo:active {
 .social-networks {
   padding-right:16px;
   padding-left:16px;
-  margin-top:62px;
+  margin-top:0px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-basis: 32px;
+  width: 160px;
+  margin-right: 56px;
 }
 
 
 .user-navigation-footer {
-  margin-top:62px;
   display:flex;
   justify-content: flex-end;
 }
 .footer-3 p {
-  margin-top: 38px;
   text-align: right;
 }
 .main-footer p{
@@ -1165,8 +1173,6 @@ a.main-footer-logo:active {
 }
 .html-logo {
   display: inline-block;
-  margin-top:47px;
-  margin-left:332px;
 }
 .social-button {
   display: inline-block;
