@@ -62,22 +62,22 @@
             <form action="https://echo.htmlacademy.ru" method="get">
               <fieldset class="fieldset-filters">
                 <legend class="cost">Стоимость</legend>
-                  <div class="paint"><div class="green-bar"></div></div>
-                  <!-- <label for="min-cost">От</label><input type="number" id="min-cost" name="cost" min="0" max="10000"> 
-                  <label for="max-cost">До</label><input type="number" id="max-cost" name="cost" min="0" max="10000">-->
+                  <div class="paint"><button type="button" class="cst1"></button><button type="button" class="cst2"></button><div class="green-bar"></div></div>
+                  <label class="from" for="min-cost">от</label><input type="number" id="min-cost" name="cost" min="0" max="10000"> 
+                  <label class="to" for="max-cost">до</label><input type="number" id="max-cost" name="cost" min="0" max="10000">
               </fieldset>
               <fieldset class="fieldset-filters color">
                 <legend>Цвет</legend>
-                  <label><input type="checkbox" name="black"><span class="check"></span>Черный</label> 
-                  <label><input type="checkbox" name="white"><span class="check"></span>Белый</label>
-                  <label><input type="checkbox" name="blue"><span class="check"></span>Синий</label>
-                  <label><input type="checkbox" name="red"><span class="check"></span>Красный</label>
-                  <label><input type="checkbox" name="pink"><span class="check"></span>Розовый</label>
+                  <input id="black" type="checkbox" name="black"><label for="black"><span class="check"></span>Черный</label>
+                  <input id="white" type="checkbox" name="white"><label for="white"><span class="check"></span>Белый</label>
+                  <input id="blue" type="checkbox" name="blue"><label for="blue"><span class="check"></span>Синий</label>
+                  <input id="red" type="checkbox" name="red"><label for="red"><span class="check"></span>Красный</label>
+                  <input id="pink" type="checkbox" name="pink" disabled><label for="pink"><span class="check"></span>Розовый</label>
               </fieldset>
               <fieldset class="fieldset-filters bluetooth">
                 <legend class="filter-head">Bluetooth</legend>
-                  <label><input type="radio" name="bluetooth" value="yes"><span class="check-r"></span>Есть</label>
-                  <label><input type="radio" name="bluetooth" value="no"><span class="check-r"></span>Нет</label> 
+                  <input id="yes" type="radio" name="bluetooth" value="yes" disabled><label for="yes"><span class="check-r"></span>Есть</label>
+                  <input id="no" type="radio" name="bluetooth" value="no"><label for="no"><span class="check-r"></span>Нет</label> 
               </fieldset>
               <button type="submit" class="button-link-inner">Показать</button>
             </form>
@@ -87,12 +87,12 @@
           <section class="sort">
             <h2>Сортировка:</h2>
             <ul class="price-type-popular">
-              <li><a href="#">По цене</a></li>
+              <li><a href="#" class="sort-active">По цене</a></li>
               <li><a href="#">По типу</a></li>
               <li><a href="#">По популярности</a></li>
             </ul>
             <ul class="up-down">
-              <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></a></li>
+              <li><a href="#" class="sort-active"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></a></li>
               <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></a></li>
             </ul> 
           </section>  
@@ -160,7 +160,7 @@
     <footer class="main-footer">
       <div class="footer-flex container">
         <div class="footer-1">
-          <a class="main-footer-logo">
+          <a class="main-footer-logo" href="index.html">
             <img src="img/logo-device-orange.svg" width="163" height="35" alt="Логотип магазина Device">
           </a> 
           <ul class="user-navigation-footer">

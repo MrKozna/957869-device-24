@@ -164,7 +164,7 @@
           <h2 class="visually-hidden">Сервисы</h2>
           <div class="list-services-flex">
             <ul class="list-of-services">
-              <li><a class="button-link-ser del">Доставка</a></li>
+              <li><a class="button-link-ser del del-black act">Доставка</a></li>
               <li><a class="button-link-ser war">Гарантия</a></li>
               <li><a class="button-link-ser cre">Кредит</a></li>
             </ul>
@@ -189,23 +189,31 @@
         <h2 class="visually-hidden">Брэнды</h2>
         <ul class="brand">
           <li>
-            <a href="#">
-              <img src="img/logo-11.jpg" width="260" height="100" alt="DJI">
+            <a  href="#">
+              <div class="dji">
+                <img src="img/logo-11.jpg" width="260" height="100" alt="DJI">
+              </div>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="img/logo-22.jpg" width="260" height="100" alt="SP-Gadgets">
+              <div class="sp">
+                <img src="img/logo-22.jpg" width="260" height="100" alt="SP-Gadgets">
+              </div>
             </a>
           </li>
           <li>
-            <a href="#">
-              <img src="img/logo-33.jpg" width="260" height="100" alt="GoPro">
+            <a class="gp" href="#">
+              <div class="gp">
+                <img src="img/logo-33.jpg" width="260" height="100" alt="GoPro">
+              </div>
             </a>
           </li>
           <li>
-            <a href="#">
-              <img src="img/logo-44.jpg" width="260" height="100" alt="Vive">
+            <a class="vive" href="#">
+              <div class="vive">
+                <img src="img/logo-44.jpg" width="260" height="100" alt="Vive">
+              </div>
             </a>
           </li>
         </ul>
@@ -268,7 +276,7 @@
     </footer>
     <section class="modal Write-us-popup">
       <h2 class="visually-hidden">Напишите нам</h2>
-      <form action="https://echo.htmlacademy.ru" method="post">
+      <form id="wr" action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label class="name">Ваше имя:
             <input type="text" name="login" placeholder="Имя Фамилия" required>
@@ -293,6 +301,7 @@
     <script src="js/popup-map.js"></script>
     <script src="js/slider1.js"></script>
     <script src="js/slider2.js"></script>
+    <script src="js/invalid.js"></script>
   </body>
 </html>
 
