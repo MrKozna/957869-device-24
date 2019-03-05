@@ -456,6 +456,10 @@ article:nth-child(3)::after {
   background-size: contain;
   border: none;
 }
+.slider-1-buttons .button:hover {
+cursor: pointer;
+}
+
 .active {
   width:12px;
   height: 12px;
@@ -1547,6 +1551,7 @@ button.button-link-inner {
 }
 
 .button-link-inner:hover, .button-link-inner:focus {
+  cursor: pointer;
   background-image: none;
   background-color: rgba(246, 197, 46, 1); 
 }
@@ -1727,8 +1732,9 @@ label.from, label.to {
   letter-spacing: 0;
   color: rgba(0, 0, 0, 0.2)
 }
-input[type="number"] {
+legend.cost ~ input[type="number"] {
   background: transparent;
+  border: none;
 }
 
 .paint .cst1 {
@@ -1761,10 +1767,10 @@ input[type="number"] {
   cursor: pointer;
   opacity: 0.8;
 }
-input[type = checkbox] {
+.fieldset-filters input[type = checkbox] {
   display: none;
 }
-input[type = radio] {
+.fieldset-filters input[type = radio] {
   display: none;
 }
 .color label{
@@ -1820,6 +1826,7 @@ input[type = "radio"]:checked + label .check-r {
   background-image: url("../img/radio-on.svg");
   background-repeat: no-repeat;
 }
+
 .check:hover, .check-r:hover {
 opacity: 0.6;
 }
@@ -2071,5 +2078,3 @@ button.button-link-send {
 }
 
 
-
-  /* Кекс body > * { background-color: rgba(255,0,0,0.5); } body > * > * { background-color: rgba(255,255,0,0.5); } body > * > * > * { background-color: rgba(0,255,0,0.5); } body > * > * > * { background-color: rgba(255,0,255,0.5); } */
