@@ -1927,7 +1927,7 @@ opacity: 0.25;
   top: 150px;
   left:50%;
   margin-left: -480px;
-  background-color: none; 
+  background-color: transparent; 
   z-index: 3;
   
 }
