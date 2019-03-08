@@ -211,7 +211,7 @@ a.focus-menu {
 
 .user-navigation a:hover, .user-navigation a:focus, 
 .site-navigation a:hover .site-navigation a:focus, .main-navigation .bold-text a:hover,
-.main-navigation .bold-text a:focus {
+.main-navigation .bold-text a:focus { 
   color: rgba(0, 0, 0, 0.6);
   opacity: 0.6;
 }
@@ -349,13 +349,13 @@ margin-bottom: 36px;
   padding:0;
   
 }
-.site-navigation > li:nth-child(1):hover .menu-popup-list {
+a.focus-menu:hover + ul.menu-popup-list{
   visibility: visible;
 }
-.menu-popup-list:hover {
+ul.menu-popup-list:hover {
   visibility: visible;
 }
-.site-navigation > li:nth-child(1):focus-within .menu-popup-list {
+li.focus:focus-within .menu-popup-list { 
   visibility: visible;
 }
 
@@ -1733,6 +1733,7 @@ label.from, label.to {
   color: rgba(0, 0, 0, 0.2)
 }
 legend.cost ~ input[type="number"] {
+  width: 60px;
   background: transparent;
   border: none;
 }
@@ -1993,7 +1994,7 @@ opacity: 0.25;
   height: 50px;
   padding-left:20px; 
   background: #f2f2f2;
-  border: none;
+  border:2px solid transparent;
 }
 .email input::placeholder, .name input::placeholder, textarea::placeholder {
   font-family: 'Open Sans', Arial, sans-serif;
@@ -2011,7 +2012,7 @@ textarea {
   width: 760px;
   height: 156px;
   padding: 20px;
-  border:none;
+  border:2px solid transparent;
   margin-top:14px;
   margin-bottom:45px;
 }
