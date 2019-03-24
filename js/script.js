@@ -41,7 +41,7 @@ mapLink.addEventListener("click", function (evt) {
   });
 
 var link =  document.querySelector(".popup");
-var modal = document.querySelector(".Write-us-popup");
+var modal = document.querySelector(".write-us-popup");
 var close = document.querySelector(".modal-close");
 var name = document.querySelector("[name=login]");
 
